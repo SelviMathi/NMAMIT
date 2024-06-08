@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+
+    int days;
+    scanf("%d",&days);
+printf("Years:%d\nWeeks:%d\nDays:%d",days/365,(days%365)/7,(days%365)%7);
+}
