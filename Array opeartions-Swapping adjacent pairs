@@ -1,0 +1,20 @@
+//Swapping adjacent pair
+#include<stdio.h>
+int main()
+{
+int arr[100];
+int noe;
+scanf("%d",&noe);
+for(int count=0;count<noe;count++)
+    scanf("%d",&arr[count]);
+
+for(int start=0;start<noe;start+=2)
+    {
+     int temp=arr[start];
+     arr[start]=arr[start+1];
+     arr[start+1]=temp;
+    }
+   
+for(int count=0;count<noe;count++)
+    printf("%d ",arr[count]);
+}
