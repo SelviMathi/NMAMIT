@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    long long int a;
+    int b,c=0;
+    scanf("%lld %d",&a,&b);
+    while(a>0){
+        int rem=a%10;
+        if(rem==b){
+            c++;
+        }
+        a/=10;
+    }
+    printf("%d",c);
+   
+}
