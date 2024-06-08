@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    long long num;
+    int reminder;
+    int sum=0;
+    printf("enter an integer");
+    scanf("%d",&num);
+    while(num!=0)
+    {
+        reminder=num%10;
+        if (reminder % 2!=0)
+        {
+            sum+=reminder;
+
+        }
+        num/=10;
+    }
+    printf("sum of digit :%d\n",sum);
+    return 0;
+}
