@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<limits.h>
+int main()
+{
+    int N, start, end, index, temp, min1, min2;
+    scanf("%d",&N);
+    int arr[N];
+    for(index=0;index<N;index++)
+    {
+        scanf("%d",&arr[index]);
+    }
+    //Write your code here
+
+    min1=arr[0];
+    min2=arr[1];
+    if(min2<min1)
+{
+    int temp=min1;
+    min1=min2;
+    min2=temp;
+}
+    for (int index = 2; index < N; ++index) {
+        if (arr[index] < min1) {
+            min2 = min1;
+            min1 = arr[index];
+        }
+        else if (arr[index] < min2 && arr[index] != min1) {
+            min2 = arr[index];
+        }
+    }
+
+
+   //Your code ends here
+    printf("%d",min2);
+    return 0;
+}
