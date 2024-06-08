@@ -1,0 +1,8 @@
+#include<stdio.h>
+void main()
+{
+    float num;
+    int precision;
+  scanf("%f %d",&num,&precision);
+  printf("%.*f",precision,num);
+  }
