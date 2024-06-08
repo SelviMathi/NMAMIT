@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+int arr[100];
+int noe;
+scanf("%d ",&noe);
+
+for(int count=0;count<noe;count++)
+    scanf("%d",&arr[count]);
+
+   int value,pos;
+   scanf("%d %d",&value,&pos);
+
+    for(int count=noe-1;count>=pos-1;count--)
+    arr[count+1]=arr[count];
+    arr[pos-1]=value;
+
+
+    for(int count=0;count<=noe;count++)
+    printf("%d ",arr[count]);
+
+
+}
