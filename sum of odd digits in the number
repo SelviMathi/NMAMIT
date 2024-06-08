@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int a,sum=0,dig;
+    scanf("%d",&a);
+    while(a>0){
+        dig=a%10;
+        if(dig%2!=0)
+        sum+=dig;
+        a/=10;
+    }
+    printf("%d",sum);
+}
