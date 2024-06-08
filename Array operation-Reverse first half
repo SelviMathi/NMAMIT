@@ -1,0 +1,28 @@
+//Complete the code snippet below to reverse the first half of the array (in place replacement).
+#include<stdio.h>
+int main()
+{
+    int N, start=0, end, index, temp;
+    scanf("%d",&N);
+    int arr[N];
+    for(index=0;index<N;index++)
+    {
+        scanf("%d",&arr[index]);
+    }
+    //Write your code here
+
+    end = N / 2 - 1;
+    while (start < end)
+        {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+        }
+
+   //Your code ends here
+   for(index=0;index<N;index++)
+        printf("%d ",arr[index]);
+    return 0;
+}
