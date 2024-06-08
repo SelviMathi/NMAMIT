@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+long int num;
+int max=0,max_value;
+scanf("%ld",&num);
+while(num>99)
+{
+    max_value=num%1000;
+    if(max_value>max)
+        max=max_value;
+    num/=10;
+}
+printf("%d",max);
+    return 0;
+
+}
+
