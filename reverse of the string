@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int i,k,count=0;
+    int i,j;
     char name[20];
     scanf("%s",name);
     for(i=0;name[i]!='\0';i++);
-        for(int j=0;j<i/2;j++)
+        for( j=0;j<i/2;j++)
         {
             int temp=name[j];
             name[j]=name[i-j-1];
