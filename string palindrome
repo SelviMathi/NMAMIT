@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[20];
+    gets(str);
+    int start=0,end,isPalindrome=1;
+    end=(strlen(str)-1);
+    while(start<end)
+    {
+        if(str[start++]!=str[end--])
+        {
+            isPalindrome=0;
+            break;
+        }
+    }
+    if(isPalindrome==0)
+        printf("The given word is not palindrome");
+    else
+        printf("The given word is palindrome");
+
+return 0;
+}
