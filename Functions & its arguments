@@ -1,1 +1,66 @@
+//Without argument without return type
+#include <stdio.h>
+drawLine();
+int main()
+{
+    drawLine();
+    printf("Welcome to coimbatore");
+    drawLine();
+    return 0;
+}
+drawLine()
+{
+ for(int i=1;i<30;i++)
+    printf("-");
+}
+
+
+//With argument without return type
+#include <stdio.h>
+drawLine(int);
+int main()
+{
+    int limit;
+    scanf("%d",&limit);
+    drawLine(limit);
+    printf("Welcome to coimbatore");
+    drawLine(limit);
+    return 0;
+}
+drawLine(int a)
+{
+ for(int i=1;i<a;i++)
+    printf("-");
+}
+
+//Without argument with return type
+#include <stdio.h>
+int add();
+int main()
+{
+    printf("%d",add());
+    return 0;
+}
+int add()
+{
+    int a,b;
+ scanf("%d %d",&a,&b);
+ return a+b;
+}
+
+//With argument with return type
+
+#include <stdio.h>
+int add(int ,int);
+int main()
+{
+    int a,b;
+ scanf("%d %d",&a,&b);
+  printf("%d",add(a,b));
+    return 0;
+}
+int add(int m,int n)
+{
+ return m+n;
+}
 
