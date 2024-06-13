@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+int limit;
+scanf("%d",&limit);
+for(int row=1;row<=limit;row++,printf("\n"))
+{
+    for(int col=1;col<=limit;col++)
+    {
+        if(row==1|| col==1 || row==limit || col==limit)
+            printf("1");
+        else
+            printf("0");
+    }
+}
+return 0;
+}
