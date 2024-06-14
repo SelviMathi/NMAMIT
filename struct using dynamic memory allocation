@@ -1,0 +1,17 @@
+#include <stdio.h>
+typedef struct s
+{
+     int a;
+    char c[10];
+}S1;
+int main()
+{
+    S1 *str;
+    str=(S1*)malloc(sizeof(S1));
+    scanf("%d %s",&str->a,str->c);
+    printf("%d %s",str->a,str->c);
+    free(str);
+    return 0;
+}
+
+
